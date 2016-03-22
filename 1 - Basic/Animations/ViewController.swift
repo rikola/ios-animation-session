@@ -22,48 +22,34 @@ class ViewController: UIViewController {
 	// Put all your initial view configuration logic in here
 	override func viewDidLoad() {
 		super.viewDidLoad()
-		carImage.transform = CGAffineTransformMakeRotation(CGFloat(M_PI_2))
+		// Insert code here
 	}
 	
 	
 	@IBAction func upButtonDidPress(sender: UIButton) {
-		UIView.animateWithDuration(1.0, animations: {
-			self.carImage.center.y -= 50.0
-		})
+		// Insert code here
 	}
 	
 	@IBAction func downButtonDidPress(sender: UIButton) {
-		UIView.animateWithDuration(1.0, animations: {
-			self.carImage.center.y += 50.0
-		})
+		// Insert code here
 	}
 	
 	@IBAction func rightButtonDidPress(sender: UIButton) {
-		UIView.animateWithDuration(1.0, animations: {
-			self.carImage.center.x += 50.0
-		})
+		// Insert code here
 	}
 	
 	@IBAction func leftButtonDidPress(sender: UIButton) {
-		UIView.animateWithDuration(1.0, animations: {
-			self.carImage.center.x -= 50.0
-		})
+		// Insert code here
 	}
 	
 	@IBAction func turnLeftDidPress(sender: UIButton) {
 		toggleVertical()
-		UIView.animateWithDuration(1.0, animations: {
-			let currentTransform = self.carImage.transform
-			self.carImage.transform = CGAffineTransformRotate(currentTransform, CGFloat(-M_PI_2))
-		})
+		// Insert code here
 	}
 	
 	@IBAction func turnRightDidPress(sender: UIButton) {
 		toggleVertical()
-		UIView.animateWithDuration(1.0, animations: {
-			let currentTransform = self.carImage.transform
-			self.carImage.transform = CGAffineTransformRotate(currentTransform, CGFloat(M_PI_2))
-		})
+		// Insert code here
 	}
 	
 	
@@ -74,7 +60,5 @@ class ViewController: UIViewController {
 		leftButton.enabled = !leftButton.enabled
 		rightButton.enabled = !rightButton.enabled
 	}
-	
-	
 }
 
